@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Hotel Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header with Navigation -->
+  <header>
+    <h1>Luxury Hotel</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#rooms">Rooms</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to Luxury Stay</h2>
+    <p>Experience comfort and elegance with us.</p>
+    <a href="#booking" class="btn">Book Now</a>
+  </section>
+
+  <!-- Placeholder for more content -->
+  <section id="rooms">
+    <h3>Our Rooms</h3>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Luxury Hotel. All rights reserved.</p>
+  </footer>
+
+  <!-- Button -->
+<a href="#rooms" class="btn" id="showRoomsBtn">View Rooms & Prices</a>
+
+<!-- Hidden section -->
+<section id="rooms" style="display: none;">
+  <h3>Our Rooms & Prices</h3>
+  <ul>
+    <li>Standard Room - $100/night</li>
+    <li>Deluxe Room - $150/night</li>
+    <li>Suite - $250/night</li>
+    <li>Presidential Suite - $500/night</li>
+    <li>Family Room - $200/night</li>
+    <li>Honeymoon Suite - $300/night</li>
+    <li>Executive Room - $400/night</li>
+    <li>Accessible Room - $120/night</li>
+    <li>Garden View Room - $180/night</li>
+    <li>Ocean View Room - $220/night</li>
+    <li>Mountain View Room - $200/night</li>
+    <li>Luxury Apartment - $600/night</li>
+    <li>Business Suite - $350/night</li>
+    <li>Romantic Getaway Package - $450/night</li>
+    <li>Weekend Special - $180/night</li>
+    <li>Long Stay Discount - $90/night (for stays over 7 nights)</li>
+    <li>Seasonal Offer - $80/night (limited time only)</li>
+    <li>Early Bird Special - $70/night (book 30 days in advance)</li>
+    <li>Last Minute Deal - $120/night (book within 48 hours)</li>
+    <li>Corporate Rate - $150/night (for business travelers)</li>
+    
+
+  </ul>
+</section>
+
+<!-- Script -->
+<script>
+  document.getElementById('showRoomsBtn').addEventListener('click', function(event) {
+    event.preventDefault();
+    const roomSection = document.getElementById('rooms');
+    if (roomSection.style.display === 'none') {
+      roomSection.style.display = 'block';
+    } else {
+      roomSection.style.display = 'none';
+    }
+  });
+</script>
+
+  <!-- Additional content can be added here -->
+  <section id="facilities">
+    <h3>Facilities</h3>
+    <p>Enjoy our world-class amenities including a spa, gym, and pool.</p>
+  </section>
+
+  <section id="contact">
+    <h3>Contact Us</h3>
+    <p>Email:</p>
+    <p>Phone: +1 234 567 890</p>
+    <p>Address: 123 Luxury St, Comfort City</p>
+    </section>
+
+    <section id="booking">
+    <h3>Book Your Stay</h3>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <button type="submit">Submit</button>
+            </form>
+            </section>
+
+
+              
+
+
+</body>
+</html>
